@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtros</title>
+    <link rel="stylesheet" href="/css/estiloFiesta.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Menu lateral de filtros -->
+        <aside class="sidebar">
+            <h3>Filtros</h3>
+            <br>
+            <div class="filter-group">
+                <h4>Filtrar por Isla</h4>
+                <br>
+                <div>
+                    <input type="radio" value="Gran Canaria" class="filtroIsla" name="uno"> Gran Canaria
+                </div>
+                
+                <div>
+                    <input type="radio" value="Tenerife" class="filtroIsla"  name="uno"> Tenerife
+
+                </div>
+                
+                <div>
+                    <input type="radio" value="La Palma" class="filtroIsla"  name="uno"> La Palma
+
+                </div>
+                
+                <div>
+                    <input type="radio" value="Fuerteventura" class="filtroIsla"  name="uno"> Fuerteventura
+
+                </div>
+                <div>
+                    <input type="radio" value="El Hierro" class="filtroIsla"  name="uno"> El Hierro
+
+                </div>
+                <div>
+                    <input type="radio" value="La Gomera" class="filtroIsla"  name="uno"> La Gomera
+
+                </div>
+                <div>
+                    <input type="radio" value="Lanzarote" class="filtroIsla"  name="uno"> Lanzarote
+
+                </div>
+                
+
+            </div>
+
+            <div class="filter-group">
+                <br>
+                <h4>Filtrar por Mes</h4>
+                <br>
+                <div>
+                    <input type="radio" value="Enero" class="filtroMes" name="dos"> Enero
+
+                </div>
+                <div>
+                    <input type="radio" value="Febrero" class="filtroMes" name="dos"> Febrero
+
+                </div>
+                <div>
+                    <input type="radio" value="Marzo" class="filtroMes" name="dos"> Marzo
+
+                </div>
+                <div>
+                    <input type="radio" value="Abril" class="filtroMes" name="dos"> Abril
+
+                </div>
+                <div>
+                    <input type="radio" value="Mayo" class="filtroMes" name="dos"> Mayo
+
+                </div>
+                <div>
+                    <input type="radio" value="Junio" class="filtroMes" name="dos"> Junio
+
+                </div>
+                <div>
+                    <input type="radio" value="Julio" class="filtroMes" name="dos"> Julio
+
+                </div>
+                <div>
+                    <input type="radio" value="Agosto" class="filtroMes" name="dos"> Agosto
+
+                </div>
+
+                <div>
+                    <input type="radio" value="Septiembre" class="filtroMes" name="dos"> Septiembre
+
+                </div>
+                <div>
+                    <input type="radio" value="Octubre" class="filtroMes" name="dos"> Octubre
+
+                </div>
+                <div>
+                    <input type="radio" value="Noviembre" class="filtroMes" name="dos"> Noviembre
+
+                </div>
+                <div>
+                    <input type="radio" value="Diciembre" class="filtroMes" name="dos"> Diciembre
+
+                </div>
+            </div>
+            <br>
+            <button id="aplicarFiltros" onclick="aplicarFiltros()">Aplicar Filtros</button>
+        </aside>
+
+        <!-- Contenedor para mostrar las fiestas -->
+        <main class="content">
+            <h1>Fiestas Tradicionales de Canarias</h1>
+            <div id="mostrar"></div>
+        </main>
+    </div>
+
+    <script src="/js/funcionalidad.js"></script>
+</body>
+</html>

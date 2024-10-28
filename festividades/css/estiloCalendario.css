@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#calendar{
+    margin-top: 15px;
+   width: 50%;
+   text-align: center;
+}
+.fc .fc-daygrid-day-top {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.card {
+    
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 20px;
+    width: calc(33% - 20px); /* Ajusta el ancho de las tarjetas para que se alineen en filas de  */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    
+    margin-top: px;
+
+}
+.card h3{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #2c3e50; 
+}
+.card p{
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+
+.card:hover{
+    transform: translateY(-10px); /* Efecto de elevación */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+
+}
+.card.visible{
+    width: 300px;
+    height: 350px;
+    margin-top: px;
+    
+}
+
+#fiestas-card{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    margin-top: 15px;
+    width: 50%;
+}
+
+
